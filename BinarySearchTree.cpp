@@ -61,4 +61,7 @@ public :
     }
 
     void search(int element ,Node *&parent, Node *&currentNode)
-  
+    {
+        // this function searches for a node containing 'element'
+        currentNode = ROOT;             // Start at the root node
+        
