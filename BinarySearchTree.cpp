@@ -64,4 +64,16 @@ public :
     {
         // this function searches for a node containing 'element'
         currentNode = ROOT;             // Start at the root node
-        
+        parent =nullptr;                // Initially, parent is null
+        // Traverse until you find the node or hit null
+        while ((currentNode != nullptr )&&(currentNode->info != element))
+        {
+            parent = currentNode;       // Save current node as parent
+            if (element < currentNode->info)  // If value is smaller, go left
+            {
+                currentNode= currentNode->leftchild;
+            }
+            else                         // Otherwise go right
+                currentNode =currentNode->righchild;
+        }
+    }
