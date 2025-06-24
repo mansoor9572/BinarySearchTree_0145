@@ -24,4 +24,10 @@ public :
         ROOT= nullptr;            // Initialize the tree as empty
     }
 
-   
+    void insert ()
+    {
+        int x;                    // Variable to hold value to insert
+        cout<<"masulan nili :";   // Prompt user for input
+        cin>>x;                  // Read input value
+
+       
