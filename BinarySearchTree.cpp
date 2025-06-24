@@ -30,4 +30,6 @@ public :
         cout<<"masulan nili :";   // Prompt user for input
         cin>>x;                  // Read input value
 
-       
+        // step 1: create a new node
+        Node *newNode =new Node();
+        
