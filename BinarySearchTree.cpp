@@ -50,4 +50,15 @@ public :
             // 5b: return because insertion is done
             return;
         }
-        
+        // step 7: if value is greater than parent's value
+        else if (x > parent->info)
+        {
+            // 7a: insert new node as the right child of parent
+            parent->righchild =newNode;
+            // 7b: return after insertion
+            return;
+        }
+    }
+
+    void search(int element ,Node *&parent, Node *&currentNode)
+  
