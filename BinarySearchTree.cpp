@@ -77,3 +77,23 @@ public :
                 currentNode =currentNode->righchild;
         }
     }
+
+    void inorder(Node *ptr)
+    {
+        // Print the tree using inorder traversal (Left, Node, Right)
+        if (isEmpty())                // Check if the tree is empty
+        {
+              cout<<"tree is empty"<<endl;
+              return;
+        }
+        if (ptr == nullptr)           // Base case: node is null
+            return;
+
+        inorder(ptr->leftchild);       // Traverse left subtree
+        cout<<ptr->info<<endl;         // Print node data
+        inorder(ptr->righchild);       // Traverse right subtree
+    }
+
+    void preorder(Node *ptr)
+    {
+       
