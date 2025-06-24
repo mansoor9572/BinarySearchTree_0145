@@ -16,3 +16,7 @@ public:
 };
 
 class BinaryTree                  // Define class BinaryTree for the binary search tree
+{
+public :
+    Node *ROOT;                  // Pointer to the root node of the tree
+   
