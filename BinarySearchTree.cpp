@@ -34,4 +34,7 @@ public :
         Node *newNode =new Node();
         // step2: store value in new node's data field
         newNode->info = x;
+        // step 3: make its left and right pointers null
+        newNode-> leftchild= nullptr;
+        newNode->righchild =nullptr;
         
