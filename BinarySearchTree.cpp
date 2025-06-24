@@ -14,3 +14,5 @@ public:
         righchild= nullptr;       // Initialize right child to null
     }
 };
+
+class BinaryTree                  // Define class BinaryTree for the binary search tree
