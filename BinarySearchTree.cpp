@@ -32,4 +32,6 @@ public :
 
         // step 1: create a new node
         Node *newNode =new Node();
+        // step2: store value in new node's data field
+        newNode->info = x;
         
