@@ -96,4 +96,11 @@ public :
 
     void preorder(Node *ptr)
     {
-       
+        // Print the tree using preorder traversal (Node, Left, Right)
+        if (isEmpty())                // Check if tree is empty
+        {
+              cout<<"tree is empty"<<endl;
+              return;
+        }
+        if (ptr == nullptr)           // Base case
+            return;
