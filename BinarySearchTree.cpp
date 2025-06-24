@@ -41,3 +41,13 @@ public :
         Node *parent = nullptr;
         Node *currentNode =nullptr;
         search(x,parent,currentNode);  // Search for insertion point
+
+        // step 5: if parent is null, then the tree was empty
+        if (parent = nullptr)
+        {
+            // 5a: make the new node the root
+            ROOT = newNode;
+            // 5b: return because insertion is done
+            return;
+        }
+        
