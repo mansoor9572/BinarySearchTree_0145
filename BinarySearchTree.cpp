@@ -104,3 +104,25 @@ public :
         }
         if (ptr == nullptr)           // Base case
             return;
+
+        cout<<ptr->info<<endl;         // Print node data
+        preorder(ptr->leftchild);      // Traverse left subtree
+        preorder(ptr->righchild);      // Traverse right subtree
+    }
+
+    void postorder(Node *ptr)
+    {
+        // Print the tree using postorder traversal (Left, Right, Node)
+        if (isEmpty())                // Check if the tree is empty
+        {
+              cout<<"tree is empty"<<endl;
+              return;
+        }
+        if (ptr == nullptr)           // Base case
+            return;
+
+        postorder(ptr->leftchild);     // Traverse left subtree
+        postorder(ptr->righchild);     // Traverse right subtree
+        cout<<ptr->info<<endl;         // Print node data
+    }
+
