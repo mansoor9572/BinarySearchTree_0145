@@ -19,4 +19,9 @@ class BinaryTree                  // Define class BinaryTree for the binary sear
 {
 public :
     Node *ROOT;                  // Pointer to the root node of the tree
+    BinaryTree()
+    {
+        ROOT= nullptr;            // Initialize the tree as empty
+    }
+
    
