@@ -37,4 +37,7 @@ public :
         // step 3: make its left and right pointers null
         newNode-> leftchild= nullptr;
         newNode->righchild =nullptr;
-        
+        // step 4: declare pointers to help with search
+        Node *parent = nullptr;
+        Node *currentNode =nullptr;
+        search(x,parent,currentNode);  // Search for insertion point
