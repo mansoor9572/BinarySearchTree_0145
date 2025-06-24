@@ -43,7 +43,7 @@ public :
         search(x,parent,currentNode);  // Search for insertion point
 
         // step 5: if parent is null, then the tree was empty
-        if (parent = nullptr)
+        if (parent == nullptr)
         {
             // 5a: make the new node the root
             ROOT = newNode;
@@ -131,4 +131,59 @@ public :
         // Return true if the tree's ROOT is null
         return ROOT == nullptr;
     }
+
+    
 };
+int main()
+{
+    BinaryTree x;
+    while (true)
+    {
+        cout << "\nMenu" << endl;
+        cout << "1. Implement insert operation" << endl;
+        cout << "2. Perform inorder traversal" << endl;
+        cout << "3. Perform preorder traversal" << endl;
+        cout << "4. Perform postorder traversal" << endl;
+        cout << "5. Exit" << endl;
+        cout << "\nEnter your choice (1-5) : ";
+
+        char ch;
+        cin >> ch;
+        cout << endl;
+
+        switch (ch)
+        {
+        case '1':
+        {
+            x.insert();
+            break;
+        }
+        case '2':
+        {
+            x.inorder(x.ROOT);
+            break;
+        }
+        case '3':
+        {
+
+            x.preorder(x.ROOT);
+            break;
+        }
+        case '4':
+        {
+
+            x.postorder(x.ROOT);
+            break;
+        }
+        case '5':
+            return 0;
+        default:
+        {
+            cout << "Invalid option" << endl;
+            break;
+        }
+        }
+    }
+
+}
+
