@@ -126,3 +126,9 @@ public :
         cout<<ptr->info<<endl;         // Print node data
     }
 
+    bool isEmpty()
+    {
+        // Return true if the tree's ROOT is null
+        return ROOT == nullptr;
+    }
+};
